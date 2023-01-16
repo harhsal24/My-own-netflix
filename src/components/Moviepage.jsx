@@ -35,7 +35,7 @@ function Moviepage() {
       }}
     >
       <div className="absolute top-[70px] left-0 w-full h-full">
-        {/* <iframe
+        <iframe
           className="text-white"
           src={`https://autoembed.to/movie/tmdb/${mId}`}
           width="100%"
@@ -43,8 +43,8 @@ function Moviepage() {
           title={`${mId}`}
           allowFullScreen
           allow="autoplay"
-        /> */}
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/lI1ae4REbFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        />
+       
         <h1 className="text-white text-3xl sm:py-5 py-8 px-6 liner bg-gradient-to-r from-red-900 to-red-400 ">
           {movieData.title}
         </h1>

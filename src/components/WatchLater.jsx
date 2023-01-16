@@ -45,7 +45,7 @@ function WatchLater() {
           </div>
 
           <div className=" absolute top-[70%] left-0 w-full h-full scroll-smooth scrollbar-hide ">
-            {watchLaterMovies.length && watchLaterMovies.map((item) => (
+            {watchLaterMovies && (watchLaterMovies.map((item) => (
               <div
                 key={item.id}
                 className="mywidth mx-2 w-[160px] sm:w-[190px] md:w-[240px] lg:w-[320px] inline-block cursor-pointer relative p-2 xl:w-[280px] 2xl:w-[290px]"
@@ -70,7 +70,7 @@ function WatchLater() {
                   </p>
                 </div>
               </div>
-            ))
+            )))
             
             }
           </div>
