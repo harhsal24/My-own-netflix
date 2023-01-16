@@ -31,8 +31,8 @@ function WatchLater() {
 
   return (
     < >
-    <iframe className="z-50" width="560" height="315" src="https://www.youtube.com/embed/lI1ae4REbFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h1 className="text-white text-3xl sm:py-5 py-8 px-6 liner bg-gradient-to-r from-red-900 to-red-400 "></h1>
+
+        <h1 className="text-white text-3xl sm:py-5 py-8 px-6 liner bg-gradient-to-r"></h1>
     <div className=" ">
         <div className="relative p-4 md:p-8 ">
           <div className="my-3">
@@ -45,7 +45,7 @@ function WatchLater() {
           </div>
 
           <div className=" absolute top-[70%] left-0 w-full h-full scroll-smooth scrollbar-hide ">
-            {watchLaterMovies.map((item) => (
+            {watchLaterMovies.length && watchLaterMovies.map((item) => (
               <div
                 key={item.id}
                 className="mywidth mx-2 w-[160px] sm:w-[190px] md:w-[240px] lg:w-[320px] inline-block cursor-pointer relative p-2 xl:w-[280px] 2xl:w-[290px]"
@@ -70,7 +70,9 @@ function WatchLater() {
                   </p>
                 </div>
               </div>
-            ))}
+            ))
+            
+            }
           </div>
         </div>
       </div>

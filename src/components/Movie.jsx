@@ -64,15 +64,15 @@ function Movie({ item }) {
           </Link>
           <p onClick={saveShow}>
             {like ? (
-              <RiHeartFill size={35} className="absolute top-4 left-4 text-gray-300 " />
+              <RiHeartFill size={25} className="absolute top-4 left-4 text-gray-300 " />
             ) : (
-              <RiHeartAddLine size={35} className="absolute top-4 left-4 text-gray-300" />
+              <RiHeartAddLine size={25} className="absolute top-4 left-4 text-gray-300" />
             )}
           </p>
           <p onClick={saveWatchLaters}>
             { isAddToWatchLater?(
-              <BsBookmarkFill size={35} className="absolute top-4 right-4 text-gray-300 " />
-            ):(<BsBookmarkPlus size={35} className="absolute top-4 right-4 text-gray-300 "/>)
+              <BsBookmarkFill size={25} className="absolute top-4 right-4 text-gray-300 " />
+            ):(<BsBookmarkPlus size={25} className="absolute top-4 right-4 text-gray-300 "/>)
 
             }
           </p>
